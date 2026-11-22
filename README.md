@@ -6,6 +6,14 @@ UNWRITTEN is an open-world 3D exploration game with no level files and no audio 
 
 Built for the Cerebras × Kimi K3.1 Pro × OpenClaw Weekend Hackathon. #KimiOnCerebras
 
+## Demo and posts
+
+The demo video (55 s, real time; only the waits in the Cerebras queue are trimmed) is attached to these posts:
+
+- X (official submission): https://x.com/KEisuke62350514/status/2124533427999486057
+- Reddit, r/Cerebras: https://www.reddit.com/r/Cerebras/comments/1y2srr7/tried_realtime_open_world_generation_with_kimi/
+- Discord: posted in the hackathon demo channel of the Cerebras server
+
 ## What you see
 
 - **The edge of the written world.** Beyond the regions Kimi has written there is only a void. Where Kimi is writing right now, a glowing blueprint grid and beams of light appear with "Kimi is writing this region…", then the ground rises out of the void and landmarks drop from the sky.
