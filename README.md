@@ -12,7 +12,7 @@ The demo video (55 s, real time; only the waits in the Cerebras queue are trimme
 
 - X (official submission): https://x.com/KEisuke62350514/status/2124533427999486057
 - Reddit, r/Cerebras: https://www.reddit.com/r/Cerebras/comments/1y2srr7/tried_realtime_open_world_generation_with_kimi/
-- Discord: posted in the hackathon demo channel of the Cerebras server
+- Discord, Cerebras server: https://discord.com/channels/1085960591052644463/1574094046517792868
 
 ## What you see
 
