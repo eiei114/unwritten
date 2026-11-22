@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unwritten</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="world.css">
+</head>
+<body>
+  <div class="layout">
+    <main class="play">
+      <canvas id="world"></canvas>
+
+      <div class="hud hud-left">
+        <div class="stat"><span class="label">REGIONS</span><span id="regions" class="value">0</span></div>
+        <div class="stat"><span class="label">SHARDS</span><span id="shards" class="value">0</span></div>
+        <div class="stat"><span class="label">QUESTS</span><span id="quests" class="value">0</span></div>
+        <div class="stat"><span class="label">MET</span><span id="met" class="value">0</span></div>
+      </div>
+
+      <div id="speed" class="speed">
+        <div class="speed-kicker">KIMI IS WRITING THIS WORLD</div>
+        <div class="speed-main"><span id="tps">—</span><span class="speed-unit">tok/s</span></div>
+        <div class="speed-sub"><span id="tok">—</span> tokens · <span id="sec">—</span> s</div>
+        <div id="speed-note" class="speed-note">&nbsp;</div>
+      </div>
+
+      <canvas id="minimap" class="minimap" width="220" height="220"></canvas>
+      <div id="region" class="region hidden"></div>
+      <div id="toast" class="toast hidden"></div>
+      <div id="compass" class="compass hidden"><span id="compass-arrow" class="compass-arrow">▲</span><span id="compass-text"></span></div>
+
+      <div id="title" class="overlay">
+        <div class="logo">UNWRITTEN</div>
+        <div class="tagline">This world doesn't exist yet.<br>Kimi K3.1 Pro writes it wherever you walk.</div>
+        <div id="title-status" class="status">Waiting for Kimi…</div>
+        <div id="start-hint" class="hint hidden">Click or press <kbd>SPACE</kbd> to wake up</div>
+        <div class="hint controls">Move <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> · look: drag or <kbd>Q</kbd>/<kbd>E</kbd> · jump <kbd>SPACE</kbd> · run <kbd>SHIFT</kbd> · sound <kbd>M</kbd></div>
+        <div class="hint sound-note">🔊 Terrain, quests, characters, music and ambience are all written live by Kimi. No level files, no audio files.</div>
+      </div>
+
+      <div class="credit">Kimi K3.1 Pro on Cerebras · OpenClaw agent <small>tok/s = model time, first → last token at the OpenClaw gateway; queue excluded</small></div>
+    </main>
+
+    <aside class="log-panel">
+      <div class="log-head">
+        <span>WORLD LOG</span>
+        <span id="log-meta" class="log-meta">live from the OpenClaw agent</span>
+      </div>
+      <div id="log" class="log"></div>
+    </aside>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="open-world.js"></script>
+</body>
+</html>

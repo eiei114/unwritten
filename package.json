@@ -1,0 +1,14 @@
+{
+  "name": "unwritten",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An open-world 3D game that does not exist until Kimi K3.1 Pro writes it, live on Cerebras through an OpenClaw agent.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "license": "MIT"
+}
